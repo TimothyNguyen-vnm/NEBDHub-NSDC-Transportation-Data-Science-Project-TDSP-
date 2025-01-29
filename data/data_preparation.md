@@ -23,14 +23,14 @@ database link: [https://drive.google.com/file/d/12XPI1kNaRlBQpoTAlvuaXYpUUohfGCY
 from google.colab import drive
 drive.mount('/content/drive')
 
-# TODO: Read the data using pandas read_csv function
+**TODO: Read the data using pandas read_csv function**
 data = pd.read_csv("/content/drive/MyDrive/Motor_Vehicle_Collisions_-_Crashes_20241229.csv")
 
 **Step 3:** Let's see what the data looks like. I can use the `head` function which returns the first 5 rows of the dataset.
 
-# TODO: Print the first 5 rows of the data using head function of pandas
+**TODO: Print the first 5 rows of the data using head function of pandas**
 data.head(5)
 
-# TODO: Describe the data using the describe function of pandas
+**TODO: Describe the data using the describe function of pandas**
 desc_stats = data.describe()
 desc_stats

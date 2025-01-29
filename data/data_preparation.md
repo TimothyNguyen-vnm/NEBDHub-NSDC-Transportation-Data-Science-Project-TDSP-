@@ -43,3 +43,11 @@ data.head(5)
 desc_stats = data.describe()
 desc_stats
 ```
+
+```
+from google.colab import sheets
+sheet = sheets.InteractiveSheet(df=desc_stats)
+```
+
+
+

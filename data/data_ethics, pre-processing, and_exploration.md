@@ -18,4 +18,4 @@ missing_data = pd.DataFrame({'Missing Values': missing_values, 'Percentage (%)':
 missing_data.sort_values(by='Percentage (%)', ascending=False)
 ```
 
-
+<img width="531" alt="Screenshot 2025-01-29 at 4 39 53 PM" src="https://github.com/user-attachments/assets/42524277-d4a1-4a14-926d-7debad871c2a" />

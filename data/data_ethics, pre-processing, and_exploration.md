@@ -1,21 +1,70 @@
-**Step 1:** Before I begin assessing our data for missing values, it is important that I understand the ethical implications surrounding data processing. To best prepare myself for this module, I reviewed one or more of the following resources:
+# 🚗 NYC Motor Vehicle Collisions Analysis
 
-Data Science Ethics Flashcard Video Series
-What Do I Need to Understand about Data Ethics?
-Introduction to Data Cleaning
+A comprehensive data analysis and visualization project exploring motor vehicle collisions in New York City. This project highlights data cleaning, visualization, and geospatial mapping techniques, with attention to data ethics and responsible usage.
 
-**Step 2:** Check the dataset for missing values.
+---
 
-```
-#TODO: Leverage the isnull() and sum() functions to find the number of missing values in each column
-missing_values = data.isnull().sum()
+## 📊 Objectives
 
-#TODO: Turn the missing value counts into percentages
-missing_values_percentage = (missing_values/ len(data)) * 100
+- Identify top contributing crash factors
+- Detect patterns across boroughs and vehicle types
+- Analyze temporal trends (hour/day/month)
+- Map geographic crash hotspots
+- Visualize crash severity (injuries and fatalities)
 
-#TODO: Return counts and percentages of missing values in each column
-missing_data = pd.DataFrame({'Missing Values': missing_values, 'Percentage (%)': missing_values_percentage})
-missing_data.sort_values(by='Percentage (%)', ascending=False)
-```
+---
 
-<img width="531" alt="Screenshot 2025-01-29 at 4 39 53 PM" src="https://github.com/user-attachments/assets/42524277-d4a1-4a14-926d-7debad871c2a" />
+## 📁 Dataset
+
+**Source:** NYC Open Data  
+**File:** `Motor_Vehicle_Collisions_-_Crashes_20241229.csv`
+
+---
+
+## 🧹 Step 1: Data Preparation & Preprocessing
+
+- Convert date/time fields to datetime format
+- Remove rows with missing geographic coordinates (for mapping)
+- Handle and quantify missing values
+- Generate summaries and extract relevant features like:
+  - Hour of Day
+  - Day of Week
+  - Crash Type (Injury, Fatality)
+
+---
+
+## 🔐 Step 2: Data Ethics
+
+- ⚠️ This dataset contains **sensitive public safety information**
+- No personal data is used
+- Always aggregate before visualization
+- Location-based visualizations are presented at a **city-wide level** only
+- This project is for **educational and public safety analysis purposes only**
+
+---
+
+## 📈 Step 3: Exploratory Data Analysis
+
+- 🚘 Top contributing crash factors
+- 🚐 Vehicle types most involved
+- 🕓 Crashes by time of day/week
+- 🗺️ Heatmaps by crash location and severity
+- 📅 Trend decomposition over time
+
+---
+
+## 🌐 Interactive Visualizations
+
+- **Heatmap of Crash Locations:** `visualizations/Heatmap.html`
+- **Crash Severity Map:** `visualizations/severity.html`
+
+---
+
+## ⚙️ Requirements
+
+```bash
+pandas
+matplotlib
+seaborn
+folium
+statsmodels

@@ -37,18 +37,6 @@ This project was completed as part of the NEBDHub & NSDC Transportation Data Sci
 
 ---
 
-## 🖼️ Project Snapshots
-
-![Visualization Preview](images/traffic_dash_preview.png)
-![Repository Link](images/repo_screenshot.png)
-
----
-
-## 🔗 Live Repository
-
-👉 [View Full Project Repo Here](https://github.com/TimothyNguyen-vnm/NEBDHub-NSDC-Traffic-Collision)
-
----
 
 ## 📬 Contact
 

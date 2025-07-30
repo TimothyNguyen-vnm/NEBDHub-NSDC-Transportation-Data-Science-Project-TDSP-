@@ -41,5 +41,5 @@ This project was completed as part of the NEBDHub & NSDC Transportation Data Sci
 ## 📬 Contact
 
 **Timothy Nguyen**  
-📧 [YourEmail@example.com]  
+📧 [dthanhng@bu.edu]  
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/timothynguyen-vnm)  
